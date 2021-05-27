@@ -1,0 +1,18 @@
+
+Input {
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #d6d1d5;
+    height: 35px;
+}
+
+.box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.answer-button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
