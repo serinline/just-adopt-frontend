@@ -17,7 +17,6 @@ const App = () => {
   const [currentUser, setCurrentUser] = useState(undefined);
 
   useEffect(() => {
-    console.log('ala ma kota')
     const user = JSON.parse(localStorage.getItem("user"));
     console.log(user)
     if (user) {
