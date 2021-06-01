@@ -1,16 +1,27 @@
 .input-field {
-    margin-left: 425px;
+    margin-left: 300px;
     margin-bottom: 20px;
+    margin-top:20px;
 }
 
 .input-button {
     width: 150px;
-    margin-left: 450px;
+    margin-left: 350px;
+    margin-top: 20px;
 }
 
 .alert-valid {
-    width: 450px;;
+    width: 450px;
     margin-bottom: 20px;
-    margin-left: 350px;
+    margin-top: 5px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+.select-type {
+    margin-left: 380px;
     margin-top: 5px;
 }

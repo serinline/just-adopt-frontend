@@ -10,8 +10,6 @@ F
 src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
 G
 src/components/Login.js,e\7\e7ef19b456366f68ed8168b0e2fae2f7fdd28261
-M
-src/components/NewQuestion.js,a\9\a9e44f2059972b95a6008daf7b2c092b95807c51
 ;
 src/App.css,a\a\aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
 J
@@ -33,3 +31,28 @@ J
 src/api.js,8\c\8c37372e0f85ef2d908f9d02c49f6a0d04b1f091
 <
 src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+T
+$.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
+\
+,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+F
+src/style/Homepage.css,c\5\c5099eda0412e0ccdd7dd3f4c0a3cb51ec9a8edf
+K
+src/style/LoginRegister.css,5\e\5ecd2062d69641293854ccb11f5ccfaf9f422c49
+I
+src/style/NewQuestion.css,e\6\e6f5a4125991133f2020d7f13e4c93e2a927a457
+G
+src/style/Questions.css,a\2\a299626a151d119bd16d69f4b685afa115906496
+D
+src/serviceWorker.js,9\2\920ab6ab4a57ee20a36df4e3e2e73b70f9969d14
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+9
+	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b

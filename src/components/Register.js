@@ -61,7 +61,7 @@ const Register = () => {
   };
 
   return (
-    <div >
+    <div className="main-content">
       <Card variant="outlined">
         <CardContent className="register-form">
 
@@ -95,7 +95,7 @@ const Register = () => {
                   />
 
                 <div className="input-button">
-                  <button className="btn btn-primary btn-block"> Sign Up </button>
+                  <button className="btn btn-secondary btn-block"> Sign Up </button>
               </div>
             </div>
             )}

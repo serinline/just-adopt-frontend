@@ -20,7 +20,7 @@ const useStyles = makeStyles({
   },
   pos: {
     marginBottom: 12,
-  },
+  }
 });
 
 
@@ -28,7 +28,7 @@ const Homepage = () => {
   const classes = useStyles();
 
   return (
-    <div >
+    <div className="main-content">
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <div className="desc-content">

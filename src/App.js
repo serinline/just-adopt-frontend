@@ -21,7 +21,7 @@ const App = () => {
     console.log(user)
     if (user) {
       setCurrentUser(user);
-      console.log(user)
+      console.log("user " +user)
     }
   }, []);
 
@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div>
       <nav id="navigation" className="navbar navbar-expand">
-        <div className="navbar-nav mr-auto">
+        <div className="navbar-nav navbar-dark mr-auto">
 
           <li>
             <Link to={"/home"} className="nav-link"> Home </Link>
@@ -52,8 +52,7 @@ const App = () => {
             </li>
           )}
 
-          {/*{currentUser.roles.includes("ROLE_ADMIN") && (*/}
-          {currentUser && (
+          { currentUser && currentUser.admin && (
             <li>
               <Link to={"/add-pet"} className="nav-link"> Add pet </Link>
             </li>

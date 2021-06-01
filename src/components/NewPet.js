@@ -6,7 +6,7 @@ import MuiAlert from '@material-ui/lab/Alert';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
-import "../style/NewQuestion.css"
+import "../style/NewPet.css"
 
 import {api} from "../api.js";
 
@@ -53,7 +53,7 @@ const NewPet = () => {
 
         if (checkBtn.current.context._errors.length === 0) {
             addNewPet(name, age, description, type).then(
-                (response) => {
+                () => {
                     setMessage("New pet was added");
                     setSuccessful(true);
                 },
@@ -131,14 +131,15 @@ const NewPet = () => {
                                     />
                                 </div>
 
-                                <strong>Type:</strong>
-                                <select value={type} onChange={onChangeType}>
+                                <div className="select-type">
+                                    <strong>Type:</strong>
+                                <select className="form-group" value={type} onChange={onChangeType}>
                                     <option value="cat">CAT</option>
                                     <option value="dog">DOG</option>
                                 </select>
-
-                                <div className="input-button">
-                                    <button className="btn btn-primary btn-block">Add pet</button>
+                            </div>
+                                <div className="add-pet-button">
+                                    <button className="btn btn-secondary btn-block">Add pet</button>
                                 </div>
                             </div>
                         )}

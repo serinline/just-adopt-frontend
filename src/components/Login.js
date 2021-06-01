@@ -69,7 +69,7 @@ const Login = (props) => {
   };
 
   return (
-    <div>
+    <div className="main-content">
         <Card variant="outlined">
           <CardContent className="login-form">
 
@@ -94,7 +94,7 @@ const Login = (props) => {
               </div>
 
               <div className="input-button">
-                <button className="btn btn-primary btn-block">
+                <button className="btn btn-secondary btn-block">
                   <span>Login</span>
                 </button>
               </div>

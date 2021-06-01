@@ -1,0 +1,22 @@
+.card-content{
+    background-color: white;
+    width:40%;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+img{
+    width:50%;
+    float: left;
+    height: auto;
+}
+
+div{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pet-content{
+    margin: auto;
+}

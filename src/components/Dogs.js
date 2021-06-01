@@ -1,14 +1,31 @@
-import React, { useState, useEffect  } from "react";
+import React, {useState, useEffect} from "react";
 
 import Typography from '@material-ui/core/Typography';
 import "../style/Questions.css"
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import "../style/Questions.css"
+import { makeStyles } from '@material-ui/core/styles';
 
+import "../style/pet.css"
+import UploadImages from "./UploadImages";
 
+const useStyles = makeStyles({
+    root: {
+        maxWidth: 900,
+    },
+});
 
-function  Dogs() {
+function Dogs() {
     const [dogs, setDogs] = useState([])
+    const [currentUser, setCurrentUser] = useState(undefined);
+
+    const classes = useStyles();
+    let props = {
+        dogData: dogs,
+        styleData: classes,
+        user: currentUser
+    };
 
     useEffect(() => {
         fetch("http://localhost:8080/pets/all/dog", {
@@ -23,27 +40,50 @@ function  Dogs() {
                 setDogs(data);
             });
     }, []);
+
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        console.log(user)
+        if (user) {
+            setCurrentUser(user);
+            console.log(user)
+        }
+    }, []);
+
     return (
-        <div>
+        <div className="main-content">
             <Card variant="outlined">
-                <CardContent>
-                    <ItemListerCats dogs={dogs} />
-                </CardContent>
+                <ItemListerDogs {...props} />
             </Card>
         </div>
     );
 
-};
+}
 
-const ItemListerCats = (props) =>
-    <div>
-        { props.dogs.map(dog => (
+const ItemListerDogs = (props) =>
+    <div className="pet-content">
+        { props.dogData.map(dog => (
             <div key={dog.id}>
-                <Typography variant="h4" component="h4">Imię: {dog.name}</Typography>
-                <div className="label">
-                    <div className = "title2">Wiek: { dog.age } </div>
-                    <div className = "title2">Opis: { dog.description } </div>
-                </div>
+
+                <Card className={props.styleData.root}>
+                    <CardContent>
+                        <div className="pet-photo">
+                            {dog.image && <img src={`data:image/jpeg;base64,${dog.image.data}`} alt="dog"/>}
+                        </div>
+                        <div className="card-content">
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Imię: {dog.name}
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                Wiek: około { dog.age } lat
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                Opis: { dog.description }
+                            </Typography>
+                        </div>
+                        {props.user.admin && dog.image === null && <UploadImages name={dog.name}/>}
+                    </CardContent>
+                </Card>
             </div>
         ))}
     </div>
