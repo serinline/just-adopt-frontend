@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:8080'
+const baseURL = 'https://just-adopt-backend.herokuapp.com/'
 
 const api = axios.create({
     baseURL: baseURL,

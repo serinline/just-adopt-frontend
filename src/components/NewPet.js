@@ -36,7 +36,7 @@ const NewPet = () => {
     const checkBtn = useRef();
 
     const addNewPet = (name, age, description, type) => {
-        return api.post("http://localhost:8080/pets/save",
+        return api.post("https://just-adopt-backend.herokuapp.com/pets/save",
             {
                 name, age, description, type
             });
