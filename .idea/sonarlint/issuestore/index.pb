@@ -44,8 +44,6 @@ F
 src/style/Homepage.css,c\5\c5099eda0412e0ccdd7dd3f4c0a3cb51ec9a8edf
 K
 src/style/LoginRegister.css,5\e\5ecd2062d69641293854ccb11f5ccfaf9f422c49
-I
-src/style/NewQuestion.css,e\6\e6f5a4125991133f2020d7f13e4c93e2a927a457
 G
 src/style/Questions.css,a\2\a299626a151d119bd16d69f4b685afa115906496
 D
@@ -54,5 +52,11 @@ A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-9
-	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
+?
+src/App.test.js,9\2\923703ced91ac38943d37930d9d27a7ebe8f01ad
+N
+src/components/UploadImages.js,9\9\99b60ef64fb7890cd5934a5e665a64cda87bcd6f
+D
+src/style/NewPet.css,8\c\8c3d22efb77648005614ed1e470abdd8a67bc358
+A
+src/style/pet.css,2\4\248b01a43f6c259459111263eb1db9990e57973e
