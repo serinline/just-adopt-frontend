@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://just-adopt-backend.herokuapp.com/'
+const baseURL = 'https://justadopt-6ygf3gqmiq-uc.a.run.app/'
 
 const api = axios.create({
     baseURL: baseURL,

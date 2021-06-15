@@ -14,7 +14,7 @@ function Alert(props) {
 
 const login = async (username, password) => {
   const response = await axios
-    .post("https://just-adopt-backend.herokuapp.com/auth/signin", {
+    .post("https://justadopt-6ygf3gqmiq-uc.a.run.app/auth/signin", {
       username,
       password,
     });

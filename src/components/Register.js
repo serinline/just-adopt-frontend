@@ -10,7 +10,7 @@ import MuiAlert from '@material-ui/lab/Alert';
 import "../style/LoginRegister.css"
 
 const register = (username, email, password) => {
-  return axios.post("https://just-adopt-backend.herokuapp.com/auth/signup", {
+  return axios.post("https://justadopt-6ygf3gqmiq-uc.a.run.app/auth/signup", {
     username,
     email,
     password,

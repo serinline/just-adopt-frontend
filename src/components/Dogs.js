@@ -28,7 +28,7 @@ function Dogs() {
     };
 
     useEffect(() => {
-        fetch("https://just-adopt-backend.herokuapp.com/pets/all/dog", {
+        fetch("https://justadopt-6ygf3gqmiq-uc.a.run.app/pets/all/dog", {
             method: "GET",
             dataType: "JSON",
             headers: {

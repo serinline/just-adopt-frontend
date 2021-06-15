@@ -27,7 +27,7 @@ function  Cats() {
     };
 
     useEffect(() => {
-        fetch("https://just-adopt-backend.herokuapp.com/pets/all/cat", {
+        fetch("https://justadopt-6ygf3gqmiq-uc.a.run.app/pets/all/cat", {
             method: "GET",
             dataType: "JSON",
             headers: {
